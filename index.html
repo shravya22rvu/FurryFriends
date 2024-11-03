@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Friends Haven</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: url('https://www.w3schools.com/w3images/forestbridge.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem; /* Increase the title size */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 2px solid #ddd;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .marquee {
+            display: flex;
+            animation: marquee 20s linear infinite;
+        }
+
+        .marquee img {
+            max-height: 200px;
+            margin: 0 10px;
+            border: 5px solid white;
+            border-radius: 10px;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;   /* Height of the footer */
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <header>
+            <h1>Furry Friends Haven</h1>
+        </header>
+        <nav>
+            <a href="/home">Home</a>
+            <a routerLink="/about-us">About Us</a>
+            <a href="/contact">Contact</a>
+            <a routerLink="/getinvolved">Get Involved</a>
+            <a href="/team">Team</a>
+        </nav>
+        <div class="marquee-container">
+            <div class="marquee">
+                <img src="https://cdn.pixabay.com/photo/2017/04/25/23/39/dog-2261160_1280.jpg" alt="Dog 1">
+                <img src="https://cdn.pixabay.com/photo/2019/07/23/13/51/shepherd-dog-4357790_1280.jpg" alt="Dog 2">
+                <img src="https://cdn.pixabay.com/photo/2023/08/18/15/02/dog-8198719_1280.jpg" alt="Dog 3">
+                <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Dog 4">
+                <img src="https://cdn.pixabay.com/photo/2016/11/21/16/43/bulldog-1846380_960_720.jpg" alt="Dog 5">
+                <img src="https://cdn.pixabay.com/photo/2014/09/20/19/02/dog-454145_1280.jpg" alt="Dog 1">
+                <img src="https://cdn.pixabay.com/photo/2019/07/23/13/51/shepherd-dog-4357790_1280.jpg" alt="Dog 2">
+                <img src="https://cdn.pixabay.com/photo/2023/08/18/15/02/dog-8198719_1280.jpg" alt="Dog 3">
+                <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Dog 4">
+                <img src="https://cdn.pixabay.com/photo/2016/11/21/16/43/bulldog-1846380_960_720.jpg" alt="Dog 5">
+            </div>
+        </div> 
+        <div class="footer">
+            <p>&copy; 2024 Furry Friends Haven. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
